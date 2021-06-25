@@ -4,12 +4,12 @@
 
 void setup() {
   // put your setup code here, to run once:
-pinMode(A1,INPUT);
+pinMode(A0,INPUT);
 Serial.begin(9600);
 }
 void loop() {
   // put your main code here, to run repeatedly:
-int value= analogRead(A1);
+int value= analogRead(A0);
 float voltage= value*5.0/1024;
 float temp=(voltage-0.5)*100;
 
